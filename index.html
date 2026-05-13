@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VISÃO - Veículos Inteligentes e Sistemas Autônomos Otimizados. Grupo de pesquisa em IA, robótica e sistemas autônomos.">
+    <title>VISÃO - Veículos Inteligentes e Sistemas Autônomos Otimizados</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ===== NAVBAR STICKY ===== -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="index.html#home">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 40'%3E%3Ctext x='5' y='28' font-size='24' font-weight='bold' fill='%23003d7a'%3EVISÃO%3C/text%3E%3C/svg%3E" alt="VISÃO" class="navbar-logo">
+            </a>
+            
+            <!-- Hamburger Menu -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Menu Items -->
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#home">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#linhas">Linhas de Pesquisa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#areas">Áreas Tecnológicas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projetos.html">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="equipe.html">Equipe</a></li>
+                    <li class="nav-item"><a class="nav-link" href="publicacoes.html">Publicações</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="home" class="hero-section">
+        <div class="hero-background">
+            <canvas id="canvasBackground"></canvas>
+        </div>
+        
+        <div class="container-fluid position-relative">
+            <div class="row align-items-center justify-content-center min-vh-100">
+                <div class="col-lg-8 text-center hero-content">
+                    <!-- Title -->
+                    <h1 class="display-3 fw-bold mb-3 text-gradient">VISÃO</h1>
+                    <h2 class="display-6 fw-bold text-dark mb-4">Veículos Inteligentes e Sistemas Autônomos Otimizados</h2>
+                    
+                    <!-- Tagline -->
+                    <p class="lead mb-5 text-muted">
+                        Pesquisa, Desenvolvimento e Inovação em Sistemas Autônomos, IA e Robótica Inteligente
+                    </p>
+                    
+                    <!-- CTA Buttons -->
+                    <div class="d-flex gap-3 justify-content-center flex-wrap mb-5">
+                        <a href="index.html#sobre" class="btn btn-primary btn-lg btn-custom">
+                            <i class="fas fa-arrow-down me-2"></i>Conheça o Grupo
+                        </a>
+                        <a href="index.html#linhas" class="btn btn-outline-primary btn-lg btn-custom">
+                            <i class="fas fa-graduation-cap me-2"></i>Linhas de Pesquisa
+                        </a>
+                    </div>
+                    
+                    <!-- Scroll Indicator -->
+                    <div class="scroll-indicator">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SOBRE O GRUPO ===== -->
+    <section id="sobre" class="section-sobre py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="section-title mb-4">Sobre o Grupo VISÃO</h2>
+                    
+                    <div class="card-glass mb-4">
+                        <p class="text-justify">
+                            O grupo de pesquisa <strong>VISÃO – Veículos Inteligentes e Sistemas Autônomos Otimizados</strong> 
+                            é dedicado ao desenvolvimento e inovação em tecnologias de sistemas autônomos, inteligência artificial e robótica inteligente.
+                        </p>
+                        <p class="text-justify">
+                            Nossa missão é conduzir pesquisas de excelência nas áreas de <strong>percepção</strong>, <strong>navegação</strong>, 
+                            <strong>controle</strong> e <strong>atuação</strong> de veículos e sistemas autônomos, contribuindo para o avanço 
+                            tecnológico e a formação de profissionais de alto nível.
+                        </p>
+                        <div class="about-logo-wrap mt-4 text-center">
+                            <img src="logo.png" alt="Logo VISÃO" class="about-logo img-fluid">
+                        </div>
+                    </div>
+                    
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="feature-box">
+                                <i class="fas fa-robot text-primary"></i>
+                                <h5>Robótica Autônoma</h5>
+                                <p>Desenvolvimento de sistemas robóticos inteligentes e autônomos</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-box">
+                                <i class="fas fa-microchip text-primary"></i>
+                                <h5>Sistemas Embarcados</h5>
+                                <p>Soluções de computação embarcada para tempo real</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-box">
+                                <i class="fas fa-brain text-primary"></i>
+                                <h5>Inteligência Artificial</h5>
+                                <p>Algoritmos de IA e aprendizado de máquina avançado</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-box">
+                                <i class="fas fa-car text-primary"></i>
+                                <h5>Veículos Autônomos</h5>
+                                <p>Pesquisa em percepção, navegação e controle veicular</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== LINHAS DE PESQUISA ===== -->
+    <section id="linhas" class="section-linhas py-5">
+        <div class="container">
+            <h2 class="section-title mb-5 text-center">Linhas de Pesquisa</h2>
+            
+            <div class="row g-4">
+                <!-- Linha 1 -->
+                <div class="col-lg-4">
+                    <div class="card-research card-research-1">
+                        <div class="card-header-custom">
+                            <i class="fas fa-eye"></i>
+                            <h4>Percepção e Navegação</h4>
+                        </div>
+                        <div class="card-body-custom">
+                            <p class="fw-bold mb-3">Percepção, Navegação e Simulação de Veículos e Sistemas Autônomos</p>
+                            <ul class="tech-list">
+                                <li><i class="fas fa-check-circle"></i> Visão Computacional</li>
+                                <li><i class="fas fa-check-circle"></i> LiDAR</li>
+                                <li><i class="fas fa-check-circle"></i> Radar</li>
+                                <li><i class="fas fa-check-circle"></i> SLAM</li>
+                                <li><i class="fas fa-check-circle"></i> GNSS/RTK</li>
+                                <li><i class="fas fa-check-circle"></i> ROS</li>
+                                <li><i class="fas fa-check-circle"></i> CARLA</li>
+                                <li><i class="fas fa-check-circle"></i> Gazebo</li>
+                                <li><i class="fas fa-check-circle"></i> MATLAB/Simulink</li>
+                                <li><i class="fas fa-check-circle"></i> Planejamento de Trajetória</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Linha 2 -->
+                <div class="col-lg-4">
+                    <div class="card-research card-research-2">
+                        <div class="card-header-custom">
+                            <i class="fas fa-sliders-h"></i>
+                            <h4>Controle e Atuação</h4>
+                        </div>
+                        <div class="card-body-custom">
+                            <p class="fw-bold mb-3">Controle e Atuação em Veículos e Sistemas Autônomos</p>
+                            <ul class="tech-list">
+                                <li><i class="fas fa-check-circle"></i> Controle MPC</li>
+                                <li><i class="fas fa-check-circle"></i> Controle Robusto</li>
+                                <li><i class="fas fa-check-circle"></i> Controle Adaptativo</li>
+                                <li><i class="fas fa-check-circle"></i> Sistemas Embarcados</li>
+                                <li><i class="fas fa-check-circle"></i> ROS em Tempo Real</li>
+                                <li><i class="fas fa-check-circle"></i> HIL (Hardware-in-the-Loop)</li>
+                                <li><i class="fas fa-check-circle"></i> Controle de Direção</li>
+                                <li><i class="fas fa-check-circle"></i> Controle de Velocidade</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Linha 3 -->
+                <div class="col-lg-4">
+                    <div class="card-research card-research-3">
+                        <div class="card-header-custom">
+                            <i class="fas fa-bolt"></i>
+                            <h4>Propulsão e Mecanização</h4>
+                        </div>
+                        <div class="card-body-custom">
+                            <p class="fw-bold mb-3">Propulsão e Mecanização de Veículos e Sistemas Autônomos</p>
+                            <ul class="tech-list">
+                                <li><i class="fas fa-check-circle"></i> Motores BLDC</li>
+                                <li><i class="fas fa-check-circle"></i> AGVs (Veículos Guiados Automaticamente)</li>
+                                <li><i class="fas fa-check-circle"></i> Chassis Robóticos</li>
+                                <li><i class="fas fa-check-circle"></i> Baterias</li>
+                                <li><i class="fas fa-check-circle"></i> BMS (Battery Management System)</li>
+                                <li><i class="fas fa-check-circle"></i> Suspensão</li>
+                                <li><i class="fas fa-check-circle"></i> Direção</li>
+                                <li><i class="fas fa-check-circle"></i> Frenagem</li>
+                                <li><i class="fas fa-check-circle"></i> Gestão de Energia</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ÁREAS TECNOLÓGICAS ===== -->
+    <section id="areas" class="section-areas py-5">
+        <div class="container">
+            <h2 class="section-title mb-5 text-center">Áreas Tecnológicas</h2>
+            
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="tech-card">
+                        <div class="tech-icon tech-icon-1">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h5>Inteligência Artificial</h5>
+                        <p>Deep Learning, Machine Learning e Algoritmos Inteligentes</p>
+                    </div>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="tech-card">
+                        <div class="tech-icon tech-icon-2">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h5>Visão Computacional</h5>
+                        <p>Processamento de Imagem e Análise Visual Avançada</p>
+                    </div>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="tech-card">
+                        <div class="tech-icon tech-icon-3">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h5>Robótica</h5>
+                        <p>Cinética, Dinâmica e Controle de Sistemas Robóticos</p>
+                    </div>
+                </div>
+                
+                <!-- Card 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="tech-card">
+                        <div class="tech-icon tech-icon-4">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <h5>Sistemas Embarcados</h5>
+                        <p>IoT, Microcontroladores e Processamento em Tempo Real</p>
+                    </div>
+                </div>
+                
+                <!-- Card 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="tech-card">
+                        <div class="tech-icon tech-icon-5">
+                            <i class="fas fa-sliders-h"></i>
+                        </div>
+                        <h5>Controle</h5>
+                        <p>Teoria de Controle, PID, MPC e Sistemas Adaptativos</p>
+                    </div>
+                </div>
+                
+                <!-- Card 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="tech-card">
+                        <div class="tech-icon tech-icon-6">
+                            <i class="fas fa-map-location-dot"></i>
+                        </div>
+                        <h5>Navegação Autônoma</h5>
+                        <p>SLAM, Localização e Planejamento de Trajetória</p>
+                    </div>
+                </div>
+                
+                <!-- Card 7 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="tech-card">
+                        <div class="tech-icon tech-icon-7">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h5>IoT</h5>
+                        <p>Comunicação M2M, Sensores Conectados e Coleta de Dados</p>
+                    </div>
+                </div>
+                
+                <!-- Card 8 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="tech-card">
+                        <div class="tech-icon tech-icon-8">
+                            <i class="fas fa-satellite"></i>
+                        </div>
+                        <h5>Sensoriamento</h5>
+                        <p>Fusão de Sensores, LiDAR, Câmeras e Radar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PÁGINAS INTERNAS EM DESTAQUE ===== -->
+    <section class="section-projetos py-5">
+        <div class="container">
+            <h2 class="section-title mb-4 text-center">Conteúdo Institucional</h2>
+            <p class="text-center text-muted mb-5">As seções mais detalhadas foram movidas para páginas internas, mantendo o índice leve e objetivo.</p>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="placeholder-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h5>Projetos</h5>
+                            <p>Conheça os projetos fictícios do grupo, com foco em IA, robótica e navegação autônoma.</p>
+                            <a href="projetos.html" class="btn btn-sm btn-primary btn-custom-small"><i class="fas fa-arrow-right me-2"></i>Acessar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="placeholder-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                                <i class="fas fa-users"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h5>Equipe</h5>
+                            <p>Veja a organização da equipe, com coordenador, pesquisadores, alunos e parceiros.</p>
+                            <a href="equipe.html" class="btn btn-sm btn-primary btn-custom-small"><i class="fas fa-arrow-right me-2"></i>Acessar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="placeholder-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                                <i class="fas fa-book-open"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h5>Publicações</h5>
+                            <p>Confira artigos, congressos, dissertações e TCCs em uma página dedicada.</p>
+                            <a href="publicacoes.html" class="btn btn-sm btn-primary btn-custom-small"><i class="fas fa-arrow-right me-2"></i>Acessar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTATO ===== -->
+    <section id="contato" class="section-contato py-5">
+        <div class="container">
+            <h2 class="section-title mb-5 text-center">Entre em Contato</h2>
+            
+            <div class="row g-4">
+                <!-- Informações de Contato -->
+                <div class="col-lg-5">
+                    <div class="contact-info-box mb-4">
+                        <h5 class="mb-4">Informações de Contato</h5>
+                        
+                        <div class="contact-item mb-4">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h6>Email</h6>
+                                <p><a href="mailto:contato@visao-grupo.edu.br">contato@visao-grupo.edu.br</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item mb-4">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h6>Localização</h6>
+                                <p>Departamento de Engenharia<br>Universidade de Pesquisa</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item mb-4">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h6>Telefone</h6>
+                                <p><a href="tel:+551133334444">(+55) 11 3333-4444</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links mt-5">
+                            <h6 class="mb-3">Redes Sociais</h6>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Formulário de Contato -->
+                <div class="col-lg-7">
+                    <form id="contactForm" class="contact-form">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nome Completo</label>
+                            <input type="text" class="form-control form-control-custom" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control form-control-custom" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Assunto</label>
+                            <input type="text" class="form-control form-control-custom" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mensagem</label>
+                            <textarea class="form-control form-control-custom" id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-lg btn-custom">
+                            <i class="fas fa-paper-plane me-2"></i>Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Mapa Placeholder -->
+            <div class="mt-5">
+                <div class="map-placeholder">
+                    <i class="fas fa-map"></i>
+                    <p>Mapa Interativo - Localização do Grupo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-4 mb-4">
+                    <h6 class="mb-3">VISÃO</h6>
+                    <p class="footer-description">Veículos Inteligentes e Sistemas Autônomos Otimizados - Grupo de Pesquisa em Tecnologias Autônomas e IA.</p>
+                </div>
+                
+                <div class="col-md-2 mb-4">
+                    <h6 class="mb-3">Links Rápidos</h6>
+                    <ul class="footer-links">
+                        <li><a href="index.html#home">Início</a></li>
+                        <li><a href="index.html#sobre">Sobre</a></li>
+                        <li><a href="projetos.html">Projetos</a></li>
+                        <li><a href="publicacoes.html">Publicações</a></li>
+                        <li><a href="equipe.html">Equipe</a></li>
+                        <li><a href="index.html#contato">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-2 mb-4">
+                    <h6 class="mb-3">Grupos</h6>
+                    <ul class="footer-links">
+                        <li><a href="#linhas">Percepção</a></li>
+                        <li><a href="#linhas">Controle</a></li>
+                        <li><a href="#linhas">Propulsão</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-4">
+                    <h6 class="mb-3">Redes Sociais</h6>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <hr>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="footer-copyright">&copy; 2024 VISÃO - Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="footer-copyright"><a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== BOTÃO VOLTAR AO TOPO ===== -->
+    <div id="backToTop" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
